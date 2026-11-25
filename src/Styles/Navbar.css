@@ -1,0 +1,268 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 6vw;
+
+  background: rgba(3, 7, 15, 0.90);
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(100, 180, 255, 0.25);
+
+  animation: navbarReveal 0.8s ease forwards;
+  transition: all 0.3s ease;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  color: #edf6ff;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.navbar-logo span {
+  color: #8b5cf6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-1px);
+}
+
+.navbar-logo:hover span {
+  color: #60c8ff;
+}
+
+/* NAV LINKS */
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar nav a {
+  position: relative;
+  padding: 8px 15px;
+
+  color: #a8b8cc;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+  border-radius: 30px;
+
+  transition: all 0.3s ease;
+}
+
+/* BLUE-PURPLE UNDERLINE */
+
+.navbar nav a::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+
+  background: linear-gradient(90deg, #60c8ff, #9b7aff);
+  border-radius: 10px;
+
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #ffffff;
+  background: rgba(72, 130, 200, 0.12);
+  transform: translateY(-2px);
+}
+
+.navbar nav a:hover::after {
+  width: 25px;
+}
+
+/* LET'S TALK BUTTON */
+
+.navbar-button {
+  padding: 10px 21px;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #267fc4, #7250c9);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border: 1px solid rgba(120, 190, 255, 0.65);
+
+  box-shadow: 0 8px 25px rgba(65, 145, 230, 0.22);
+
+  transition: all 0.3s ease;
+  animation: buttonGlow 4s ease-in-out infinite;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* BUTTON SHINE */
+
+.navbar-button::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 60%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+  animation: buttonShine 4s infinite;
+}
+
+.navbar-button:hover {
+  background: linear-gradient(135deg, #38a5ee, #8b6cf0);
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(83, 165, 255, 0.38);
+}
+
+/* ANIMATIONS */
+
+@keyframes navbarReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonGlow {
+  0%,
+  100% {
+    box-shadow: 0 8px 25px rgba(65, 145, 230, 0.20);
+  }
+
+  50% {
+    box-shadow: 0 8px 30px rgba(139, 108, 240, 0.38);
+  }
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -100%;
+  }
+
+  35%,
+  100% {
+    left: 150%;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 4vw;
+  }
+
+  .navbar nav {
+    gap: 2px;
+  }
+
+  .navbar nav a {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 12px 5vw;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .navbar-button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+
+    justify-content: center;
+    gap: 2px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .navbar nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar nav a {
+    padding: 6px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .navbar-logo {
+    font-size: 16px;
+  }
+
+  .navbar-button {
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+
+  .navbar nav a {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+}

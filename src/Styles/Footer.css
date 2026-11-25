@@ -1,0 +1,864 @@
+/* =====================================================
+   PK ENTERTAINMENTS FOOTER
+===================================================== */
+
+.pk-footer {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(106, 63, 160, .18),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      #08060b,
+      #050309 55%,
+      #020104
+    );
+
+  color: #f1ebf8;
+
+  border-top:
+    1px solid #2b1e3d;
+}
+
+
+/* =====================================================
+   PURPLE GLOW
+===================================================== */
+
+.pk-footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: -150px;
+
+  left: 50%;
+
+  width: 500px;
+
+  height: 300px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(106, 63, 160, .18),
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+  filter: blur(20px);
+}
+
+
+/* =====================================================
+   FOOTER TOP
+===================================================== */
+
+.pk-footer-top {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.3fr
+    1.5fr;
+
+  gap: 50px;
+
+  padding:
+    70px 6% 55px;
+
+  border-bottom:
+    1px solid #2b1e3d;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.pk-footer-brand {
+  max-width: 380px;
+}
+
+
+.pk-footer-logo {
+  display: inline-flex;
+
+  flex-direction: column;
+
+  text-decoration: none;
+
+  color: #f1ebf8;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 2.4rem;
+
+  font-weight: 700;
+
+  letter-spacing: .08em;
+
+  line-height: 1;
+}
+
+
+.pk-footer-logo span {
+  margin-top: 7px;
+
+  color: #a285d4;
+
+  font-size: .95rem;
+
+  letter-spacing: .32em;
+}
+
+
+.pk-footer-tagline {
+  margin:
+    25px 0 12px;
+
+  color: #f1ebf8;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 1.15rem;
+
+  font-style: italic;
+
+  line-height: 1.6;
+}
+
+
+.pk-footer-description {
+  max-width: 350px;
+
+  margin: 0;
+
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .85rem;
+
+  line-height: 1.8;
+}
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.pk-socials {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+
+.pk-socials a {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+
+  height: 38px;
+
+  border:
+    1px solid #6a3fa0;
+
+  border-radius: 50%;
+
+  background:
+    rgba(15, 11, 22, .7);
+
+  color: #a285d4;
+
+  text-decoration: none;
+
+  font-size: .85rem;
+
+  transition:
+    .35s ease;
+}
+
+
+.pk-socials a:hover {
+  background: #6a3fa0;
+
+  color: #ffffff;
+
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 0 20px rgba(106, 63, 160, .5);
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.pk-footer-column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.pk-footer-column h3 {
+  margin:
+    0 0 22px;
+
+  color: #a285d4;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+
+  letter-spacing: .08em;
+}
+
+
+.pk-footer-column a {
+  width: fit-content;
+
+  margin-bottom: 13px;
+
+  color: #a398b3;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .82rem;
+
+  transition:
+    .3s ease;
+}
+
+
+.pk-footer-column a:hover {
+  color: #a285d4;
+
+  transform:
+    translateX(5px);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.pk-contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin-bottom: 22px;
+}
+
+
+.pk-contact-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 36px;
+
+  height: 36px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(106, 63, 160, .15);
+
+  border:
+    1px solid #6a3fa0;
+
+  color: #a285d4;
+
+  font-size: .9rem;
+}
+
+
+.pk-contact-item small {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6a3fa0;
+
+  font-size: .65rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: .12em;
+}
+
+
+.pk-contact-item a {
+  margin: 0;
+
+  color: #f1ebf8;
+
+  font-size: .82rem;
+
+  transform: none;
+}
+
+
+.pk-contact-item a:hover {
+  color: #a285d4;
+
+  transform: none;
+}
+
+
+.pk-contact-item p {
+  max-width: 260px;
+
+  margin: 0;
+
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .78rem;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   INFORMATION STRIP
+===================================================== */
+
+.pk-footer-info {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding:
+    25px 6%;
+
+  background:
+    rgba(15, 11, 22, .55);
+
+  border-bottom:
+    1px solid #2b1e3d;
+}
+
+
+/* =====================================================
+   INFO LOGO
+===================================================== */
+
+.pk-info-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f1ebf8;
+
+  font-size: 1.7rem;
+
+  font-weight: 700;
+}
+
+
+.pk-info-logo span {
+  color: #a285d4;
+
+  font-size: .75rem;
+
+  letter-spacing: .2em;
+}
+
+
+/* =====================================================
+   INFO SLOGAN
+===================================================== */
+
+.pk-info-line {
+  color: #a285d4;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 1.15rem;
+
+  font-style: italic;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+.pk-phone {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #f1ebf8;
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+
+.pk-phone span {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 35px;
+
+  height: 35px;
+
+  border-radius: 50%;
+
+  background:
+    #6a3fa0;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   ADDRESS BAR
+===================================================== */
+
+.pk-address-bar {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding:
+    20px 6%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(106, 63, 160, .16),
+      rgba(15, 11, 22, .8),
+      rgba(106, 63, 160, .12)
+    );
+
+  border-bottom:
+    1px solid #2b1e3d;
+}
+
+
+.pk-address-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background:
+    #6a3fa0;
+
+  color: #ffffff;
+
+  font-size: 1.1rem;
+
+  box-shadow:
+    0 0 20px rgba(106, 63, 160, .4);
+}
+
+
+.pk-address-bar p {
+  margin: 0;
+
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .8rem;
+
+  line-height: 1.7;
+}
+
+
+.pk-address-bar strong {
+  color: #f1ebf8;
+}
+
+
+/* =====================================================
+   DTS / DOLBY
+===================================================== */
+
+.pk-audio-badges {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-left: auto;
+}
+
+
+.dts-badge {
+  color: #f1ebf8;
+
+  font-size: 1.7rem;
+
+  font-weight: 700;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  letter-spacing: -.05em;
+}
+
+
+.dolby-badge {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 65px;
+
+  height: 45px;
+
+  border:
+    1px solid #6a3fa0;
+
+  border-radius: 8px;
+
+  color: #a285d4;
+
+  font-size: .7rem;
+
+  font-weight: 700;
+}
+
+
+.dolby-badge small {
+  font-size: .55rem;
+
+  letter-spacing: .08em;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.pk-footer-bottom {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding:
+    20px 6%;
+
+  background: #050309;
+}
+
+
+.pk-footer-bottom p {
+  margin: 0;
+
+  color: #70677c;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .72rem;
+}
+
+
+.pk-footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.pk-footer-bottom-links a {
+  color: #8b5fc7;
+
+  text-decoration: none;
+
+  font-size: .72rem;
+
+  transition:
+    .3s ease;
+}
+
+
+.pk-footer-bottom-links a:hover {
+  color: #a285d4;
+}
+
+
+.pk-footer-bottom-links span {
+  color: #2b1e3d;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .pk-footer-top {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 45px;
+  }
+
+
+  .pk-footer-info {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+
+  .pk-info-line {
+    order: 3;
+
+    width: 100%;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .pk-footer-top {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding:
+      50px 25px 40px;
+  }
+
+
+  .pk-footer-brand {
+    max-width: 100%;
+  }
+
+
+  .pk-footer-logo {
+    font-size: 2rem;
+  }
+
+
+  .pk-footer-tagline {
+    font-size: 1rem;
+  }
+
+
+  .pk-footer-info {
+    flex-direction: column;
+
+    padding:
+      25px 20px;
+
+    gap: 18px;
+  }
+
+
+  .pk-info-logo {
+    font-size: 1.5rem;
+  }
+
+
+  .pk-info-line {
+    font-size: .95rem;
+
+    order: initial;
+  }
+
+
+  .pk-phone {
+    font-size: .9rem;
+  }
+
+
+  .pk-address-bar {
+    align-items: flex-start;
+
+    padding:
+      22px 20px;
+  }
+
+
+  .pk-address-bar p {
+    font-size: .72rem;
+  }
+
+
+  .pk-audio-badges {
+    display: none;
+  }
+
+
+  .pk-footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding:
+      20px;
+  }
+
+
+  .pk-footer-bottom-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .pk-footer-top {
+    padding:
+      45px 18px 35px;
+  }
+
+
+  .pk-footer-logo {
+    font-size: 1.7rem;
+  }
+
+
+  .pk-footer-logo span {
+    font-size: .7rem;
+
+    letter-spacing: .2em;
+  }
+
+
+  .pk-footer-tagline {
+    font-size: .9rem;
+  }
+
+
+  .pk-address-bar {
+    gap: 10px;
+  }
+
+
+  .pk-address-icon {
+    width: 35px;
+
+    height: 35px;
+
+    font-size: .9rem;
+  }
+
+
+  .pk-address-bar p {
+    font-size: .65rem;
+  }
+
+}

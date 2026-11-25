@@ -1,0 +1,1067 @@
+/* =====================================================
+   WORK / PRODUCTS SECTION
+===================================================== */
+
+.products-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  padding: 25px 5% 100px;
+
+  background:
+    radial-gradient(
+      ellipse at top,
+      #0d0912 0%,
+      #08060b 35%,
+      #030205 75%
+    );
+
+  color: #f1ebf8;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.products-section h1 {
+  margin: 0;
+
+  text-align: center;
+
+  font-family:
+    "Bodoni Moda",
+    Georgia,
+    serif;
+
+  font-size: clamp(1.4rem, 4vw, 2.1rem);
+
+  font-weight: 400;
+
+  letter-spacing: 0.2em;
+
+  color: #f1ebf8;
+
+  animation:
+    titleReveal 1s ease forwards;
+}
+
+
+.products-subtitle {
+  margin: 8px 0 25px;
+
+  text-align: center;
+
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 0.9rem;
+
+  animation:
+    subtitleReveal 1.3s ease forwards;
+}
+
+
+/* =====================================================
+   PROJECTOR AREA
+===================================================== */
+
+.projector-area {
+  position: relative;
+
+  width: 100%;
+
+  height: 260px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  z-index: 5;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   PROJECTOR BODY
+===================================================== */
+
+.projector {
+  position: relative;
+
+  width: 280px;
+
+  height: 125px;
+
+  margin-top: 15px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #6a3fa0,
+      #1b1229 48%,
+      #08060b
+    );
+
+  border:
+    1px solid #6a3fa0;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, .8),
+    inset 0 2px 5px rgba(255, 255, 255, .08);
+
+  z-index: 10;
+
+  animation:
+    projectorFloat 5s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   PROJECTOR TOP TEXT
+===================================================== */
+
+.projector-top {
+  position: absolute;
+
+  top: 12px;
+
+  left: 22px;
+
+  color: #a285d4;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   PROJECTOR VENTS
+===================================================== */
+
+.vent {
+  position: absolute;
+
+  top: 43px;
+
+  width: 48px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.vent-left {
+  left: 18px;
+}
+
+
+.vent-right {
+  right: 18px;
+}
+
+
+.vent span {
+  width: 100%;
+
+  height: 3px;
+
+  border-radius: 5px;
+
+  background: #08060b;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, .05);
+}
+
+
+/* =====================================================
+   PROJECTOR LENS
+===================================================== */
+
+.projector-lens {
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: 78px;
+
+  height: 78px;
+
+  transform:
+    translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #08060b;
+
+  border:
+    3px solid #6a3fa0;
+
+  box-shadow:
+    0 0 25px rgba(106, 63, 160, .35);
+}
+
+
+.projector-lens::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 8px;
+
+  border-radius: 50%;
+
+  border:
+    2px dashed #a285d4;
+
+  animation:
+    lensRotate 10s linear infinite;
+}
+
+
+.lens-inner {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #f1ebf8 0%,
+      #cbb9e3 18%,
+      #8b5fc7 45%,
+      #2b1e3d 70%,
+      #08060b 100%
+    );
+
+  box-shadow:
+    0 0 20px rgba(162, 133, 212, .7),
+    0 0 45px rgba(106, 63, 160, .5);
+}
+
+
+/* =====================================================
+   PROJECTOR LIGHT REMOVED
+===================================================== */
+
+/*
+   Projector laser / projection beam has been removed.
+   The projector remains visible without sending
+   a light beam down toward the product rows.
+*/
+
+
+/* =====================================================
+   PRODUCT ROWS
+===================================================== */
+
+.product-row {
+  position: relative;
+
+  z-index: 30;
+
+  display: grid;
+
+  gap: 22px;
+
+  margin-bottom: 28px;
+}
+
+
+/* =====================================================
+   2 PRODUCTS
+===================================================== */
+
+.row-two {
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  max-width: 850px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+
+/* =====================================================
+   3 PRODUCTS
+===================================================== */
+
+.row-three {
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+
+
+/* =====================================================
+   4 PRODUCTS
+===================================================== */
+
+.row-four {
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  /*
+    This is the final row.
+    Its bottom border visually meets the purple glow.
+  */
+
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.product-card {
+  position: relative;
+
+  padding: 10px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border-radius: 16px;
+
+  border:
+    1px solid #2b1e3d;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 11, 22, .96),
+      rgba(5, 4, 8, .98)
+    );
+
+  opacity: 0;
+
+  transform:
+    translateY(50px)
+    scale(.94);
+
+  animation:
+    cardReveal .8s ease forwards;
+
+  animation-delay:
+    calc(1.2s + var(--delay));
+
+  transition:
+    transform .45s ease,
+    border-color .45s ease,
+    box-shadow .45s ease;
+}
+
+
+.product-card:hover {
+  transform:
+    translateY(-9px)
+    scale(1.025);
+
+  border-color:
+    #6a3fa0;
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, .7),
+    0 0 25px rgba(106, 63, 160, .22);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.image-wrapper {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 11px;
+}
+
+
+.image-wrapper img {
+  display: block;
+
+  width: 100%;
+
+  height: 170px;
+
+  object-fit: cover;
+
+  filter:
+    brightness(.78)
+    contrast(1.08);
+
+  transition:
+    transform .6s ease,
+    filter .6s ease;
+}
+
+
+.row-two .image-wrapper img {
+  height: 230px;
+}
+
+
+.product-card:hover
+.image-wrapper img {
+  transform:
+    scale(1.08);
+
+  filter:
+    brightness(1)
+    contrast(1.08);
+}
+
+
+/* =====================================================
+   IMAGE OVERLAY
+===================================================== */
+
+.image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .8rem;
+
+  letter-spacing: 1px;
+
+  background:
+    rgba(8, 6, 11, .65);
+
+  opacity: 0;
+
+  transition:
+    opacity .35s ease;
+}
+
+
+.product-card:hover
+.image-overlay {
+  opacity: 1;
+}
+
+
+/* =====================================================
+   CARD TEXT
+===================================================== */
+
+.product-card h3 {
+  margin:
+    12px 4px 4px;
+
+  color: #f1ebf8;
+
+  font-size: .95rem;
+
+  font-weight: 400;
+
+  letter-spacing: .04em;
+}
+
+
+.product-card p {
+  margin:
+    0 4px 5px;
+
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .7rem;
+}
+
+
+/* =====================================================
+   FINAL ROW LIGHT CONNECTION
+===================================================== */
+
+/*
+   Purple glow is placed at the bottom center
+   of the final row.
+*/
+
+.row-four::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  bottom: -16px;
+
+  transform:
+    translateX(-50%);
+
+  width: 70%;
+
+  height: 35px;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(162, 133, 212, .48) 0%,
+      rgba(106, 63, 160, .22) 30%,
+      rgba(106, 63, 160, .08) 55%,
+      transparent 75%
+    );
+
+  filter: blur(7px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.product-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 5000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0, 0, 0, .82);
+
+  backdrop-filter:
+    blur(12px);
+
+  animation:
+    modalBackground .3s ease forwards;
+}
+
+
+.modal-content {
+  position: relative;
+
+  width: min(850px, 95%);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 28px;
+
+  padding: 22px;
+
+  border-radius: 20px;
+
+  border:
+    1px solid #6a3fa0;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0f0b16,
+      #08060b
+    );
+
+  box-shadow:
+    0 30px 100px rgba(0, 0, 0, .85),
+    0 0 35px rgba(106, 63, 160, .18);
+
+  animation:
+    modalOpen .45s ease forwards;
+}
+
+
+.modal-content img {
+  width: 100%;
+
+  height: 330px;
+
+  object-fit: cover;
+
+  border-radius: 13px;
+}
+
+
+.modal-details {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.modal-details span {
+  width: fit-content;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  color: #a285d4;
+
+  background: #0d0912;
+
+  border:
+    1px solid #6a3fa0;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: .72rem;
+}
+
+
+.modal-details h2 {
+  margin:
+    14px 0 10px;
+
+  color: #f1ebf8;
+
+  font-size: 1.8rem;
+}
+
+
+.modal-details p {
+  color: #a398b3;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  line-height: 1.8;
+}
+
+
+.close-modal {
+  position: fixed;
+
+  top: 25px;
+
+  right: 30px;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid #6a3fa0;
+
+  background: #0f0b16;
+
+  color: #f1ebf8;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: .3s ease;
+}
+
+
+.close-modal:hover {
+  background: #6a3fa0;
+
+  transform:
+    rotate(90deg);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes titleReveal {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+@keyframes subtitleReveal {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+@keyframes projectorFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateY(-7px);
+  }
+}
+
+
+@keyframes lensRotate {
+
+  to {
+    transform:
+      rotate(360deg);
+  }
+}
+
+
+@keyframes cardReveal {
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+@keyframes modalBackground {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes modalOpen {
+
+  from {
+    opacity: 0;
+
+    transform:
+      scale(.85)
+      translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      scale(1)
+      translateY(0);
+  }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .products-section {
+    padding:
+      25px 3% 80px;
+  }
+
+
+  .projector-area {
+    height: 230px;
+  }
+
+
+  .projector {
+    width: 250px;
+  }
+
+
+  .row-two {
+    max-width: 760px;
+  }
+
+
+  .row-four {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .image-wrapper img {
+    height: 150px;
+  }
+
+
+  .row-two
+  .image-wrapper img {
+    height: 200px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .products-section {
+    padding:
+      20px 14px 60px;
+  }
+
+
+  .products-section h1 {
+    font-size: 1.15rem;
+
+    letter-spacing: .12em;
+  }
+
+
+  .products-subtitle {
+    font-size: .75rem;
+  }
+
+
+  .projector-area {
+    height: 205px;
+  }
+
+
+  .projector {
+    width: 210px;
+
+    height: 105px;
+  }
+
+
+  .projector-lens {
+    width: 65px;
+
+    height: 65px;
+  }
+
+
+  .lens-inner {
+    width: 32px;
+
+    height: 32px;
+  }
+
+
+  /* 2 PRODUCTS */
+
+  .row-two {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  /* 3 PRODUCTS */
+
+  .row-three {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  /* 4 PRODUCTS */
+
+  .row-four {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .product-card {
+    padding: 7px;
+
+    border-radius: 12px;
+  }
+
+
+  .image-wrapper img,
+  .row-two
+  .image-wrapper img {
+    height: 135px;
+  }
+
+
+  .product-card h3 {
+    font-size: .75rem;
+
+    margin-top: 8px;
+  }
+
+
+  .product-card p {
+    font-size: .6rem;
+  }
+
+
+  .row-four::after {
+    width: 85%;
+
+    bottom: -12px;
+
+    height: 28px;
+  }
+
+
+  .modal-content {
+    grid-template-columns:
+      1fr;
+
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+
+  .modal-content img {
+    height: 220px;
+  }
+
+
+  .modal-details h2 {
+    font-size: 1.4rem;
+  }
+
+
+  .modal-details p {
+    font-size: .85rem;
+
+    line-height: 1.6;
+  }
+
+
+  .close-modal {
+    top: 12px;
+
+    right: 12px;
+
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .row-two,
+  .row-three,
+  .row-four {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .image-wrapper img,
+  .row-two
+  .image-wrapper img {
+    height: 190px;
+  }
+
+
+  .projector-area {
+    height: 190px;
+  }
+
+
+  .projector {
+    width: 190px;
+  }
+}
